@@ -1,0 +1,44 @@
+{
+  "name": "try-neutrino-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "neutrino build",
+    "start": "neutrino start",
+    "lint": "neutrino lint",
+    "lint:fix": "neutrino lint --fix",
+    "test": "neutrino test",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "lint:fix": "src/**.*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "neutrino-middleware-styles-loader": "^0.1.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.1.3",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@neutrinojs/jest": "^8.2.3",
+    "@neutrinojs/react": "^8.2.3",
+    "@neutrinojs/standardjs": "^8.2.3",
+    "@neutrinojs/style-loader": "^8.2.3",
+    "neutrino": "^8.2.3",
+    "neutrino-preset-postcss-autoprefixer": "^5.0.7",
+    "node-sass": "^4.9.0",
+    "npm-watch": "^0.3.0",
+    "sass-loader": "^7.0.1"
+  },
+  "browserslist": [
+    "android > 4",
+    "IE 10"
+  ]
+}
