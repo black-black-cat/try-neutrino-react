@@ -1,3 +1,18 @@
 {
+  "env": {
+    "production": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    },
+    "test": {
+      "presets":[
+        "jest",
+        "react"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "dynamic-import-node"
+      ]
+    }
+  },
   "plugins": ["transform-react-jsx"]
 }

@@ -1,6 +1,7 @@
 import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import App from './App'
+import 'antd/dist/antd.css'
 
 const root = document.getElementById('root')
 

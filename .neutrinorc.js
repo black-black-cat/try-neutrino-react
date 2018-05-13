@@ -12,6 +12,9 @@ module.exports = {
       {
         html: {
           title: 'try-neutrino-react'
+        },
+        devServer: {
+          proxy: 'http://gank.io/api'
         }
       }
     ],
