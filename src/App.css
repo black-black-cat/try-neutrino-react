@@ -1,0 +1,20 @@
+:root {
+  --w: 300;
+  --heading: {
+    font-size: 40px;
+    font-weight: calc(var(--w) * 1.5);
+    color: #0000ffaa;
+  }
+}
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.mt {
+  margin-top: 99px;
+}
+
+.my-h1 {
+  @apply --heading;
+}

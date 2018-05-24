@@ -63,9 +63,9 @@ export default class Header extends React.PureComponent {
         <ul>
           {
             (this.state.news || [])
-              .map(item => (
-                <li>
-                  <div>{fecha.format(new Date(item.publishedAt),'myMask')}</div>
+              .map((item, i) => (
+                <li key={i}>
+                  <div>{fecha.format(new Date(item.publishedAt), 'myMask')}</div>
                   <div>{item.desc}</div>
                 </li>))
           }

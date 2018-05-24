@@ -23,11 +23,19 @@ module.exports = {
       style: {},
       css: {},
       loaders: [
-        'sass-loader',
+        // 'sass-loader',
         {
           loader: 'postcss-loader',
           options: {
-            plugins: [require('autoprefixer')]
+            plugins: [
+              require('postcss-cssnext', {
+                autoprefixer: {
+                  browsers: ['ios > 6']
+                }
+              })
+            ].concat([
+
+            ].map(require))
           }
         }
       ],

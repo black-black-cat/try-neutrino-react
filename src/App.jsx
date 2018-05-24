@@ -1,7 +1,8 @@
 import { Component } from 'react'
-// import style from './App.module.scss'
+import style from './App.css'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
+import { Divider } from 'antd'
 
 export default class App extends Component {
   state = {
@@ -10,9 +11,12 @@ export default class App extends Component {
 
   render () {
     return (
-      <BrowserRouter>
-        <Route path="/" component={Header} />
-      </BrowserRouter>
+      <div>
+        <h1 className="my-h1">super man</h1>
+        <BrowserRouter>
+          <Route path="/" component={Header} />
+        </BrowserRouter>
+      </div>
     )
   }
 }
