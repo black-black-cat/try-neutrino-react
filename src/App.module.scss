@@ -1,3 +1,11 @@
+:root {
+  --w: 300;
+  --heading: {
+    font-size: 40px;
+    font-weight: calc(var(--w) * 1.5);
+    color: #0000ffaa;
+  }
+}
 .App {
   display: flex;
   justify-content: center;
@@ -5,4 +13,11 @@
 }
 .mt {
   margin-top: 99px;
+}
+
+$my-color: red;
+
+.my-h1 {
+  // @apply --heading;
+  background-color: $my-color;
 }

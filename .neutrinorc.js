@@ -23,7 +23,6 @@ module.exports = {
       style: {},
       css: {},
       loaders: [
-        // 'sass-loader',
         {
           loader: 'postcss-loader',
           options: {
@@ -34,10 +33,12 @@ module.exports = {
                 }
               })
             ].concat([
-
+              'precss',
+              'postcss-inline-comment'
             ].map(require))
           }
-        }
+        },
+        'sass-loader',
       ],
       test: /\.css$/,
       ruleId: 'style',

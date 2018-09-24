@@ -11,10 +11,36 @@
   justify-content: center;
   padding: 20px;
 }
-.mt {
+._mt {
   margin-top: 99px;
 }
 
+// precss var
+$blue: #056ef0;
+$column: 200px;
+
 .my-h1 {
   @apply --heading;
+  border-width: 3px;
+  border-style: dotted;
+
+  &--box-shadow {
+    box-shadow: 0 0 20px 0 #333;
+  }
+}
+
+._clear {
+  &:before, &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &:before {
+    display: table-cell;
+  }
+}
+
+._border {
+  border-top: 0 solid #fff;
 }
